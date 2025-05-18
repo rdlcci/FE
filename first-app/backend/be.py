@@ -35,7 +35,7 @@ async def get_summary(request:Request, body: AnalysisSummaryRequest):
     {body.question}
 
     ## OUTPUT
-"""
+    """
     summary = ask_llm(request, MODELS, prompt)
     return summary
 
